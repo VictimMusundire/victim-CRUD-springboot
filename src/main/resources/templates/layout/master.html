@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+
+
+    <head>
+        <meta charset="utf-8" />
+        <title>FBC Sanctions Maintanance</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Victim Musundire +263776866577" name="victim" />
+        <meta content="victim dev" name="victim musundire" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- third party css -->
+        <link href="../../static/css/jquery-jvectormap-1.2.2.css" th:href="@{/css/vendor/jquery-jvectormap-1.2.2.css}" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
+
+        <!-- App css -->
+        <link href="../../static/css/icons.css" th:href="@{/css/icons.css}" rel="stylesheet" type="text/css" />
+        <link href="../../static/css/app.css" th:href="@{/css/app.css}" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="../../static/css/app-dark.css" th:href="@{/css/app-dark.css}" rel="stylesheet" type="text/css" id="dark-style" />
+
+    </head>
+
+    <body class="loading">
+        <!-- Begin page -->
+        <div class="wrapper">
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left-side-menu">
+
+                <div class="h-100" id="left-side-menu-container" data-simplebar>
+
+                    <!-- LOGO -->
+                    <a href="/" class="logo text-center">
+<!--                        <span class="logo-lg">-->
+<!--                            <img src="assets/images/logo-dark.png" alt="" height="43" id="side-main-logo">-->
+<!--                        </span>-->
+<!--                        <span class="logo-sm">-->
+<!--                            <img src="/images/logo.jpg" alt=""  id="side-sm-main-logo">-->
+<!--                        </span>-->
+                        <span class="logo-lg">
+                        <img src="images/logo-dark.png" alt="" height="43">
+                        </span>
+
+                        <span class="logo-sm">
+                            <img src="images/logo-dark.png" alt="" height="43">
+                        </span>
+                    </a>
+
+                    <!--- Sidemenu -->
+                    <ul class="metismenu side-nav">
+
+                        <li class="side-nav-title side-nav-item">Navigation</li>
+
+                        <li class="side-nav-item">
+                            <a href="/" class="side-nav-link">
+                                <i class="uil uil-comment-alt-notes"></i>
+                                <span> Sanctions </span>
+                            </a>
+                        </li>
+
+<!--                        <li class="side-nav-item">-->
+<!--                            <a href="javascript: void(0);" class="side-nav-link">-->
+<!--                                <i class="uil-briefcase"></i>-->
+<!--                                <span> Sanctions </span>-->
+<!--                                <span class="menu-arrow"></span>-->
+<!--                            </a>-->
+<!--                            <ul class="side-nav-second-level" aria-expanded="false">-->
+<!--                                <li>-->
+<!--                                    <a href="/topics">Topics</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="apps-projects-details.html">Details</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="apps-projects-gantt.html">Gantt <span class="badge badge-pill badge-light-lighten font-10 float-right">New</span></a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="apps-projects-add.html">Create Project <span class="badge badge-pill badge-success-lighten font-10 float-right">New</span></a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+
+
+                        <li class="side-nav-title side-nav-item">Configurations</li>
+
+
+                        <li class="side-nav-item">
+                            <a href="/help" target="_blank" class="side-nav-link">
+                                <i class="uil-globe"></i>
+                                <span class="badge badge-light float-right">Tips</span>
+                                <span> Help </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- End Sidebar -->
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Topbar Start -->
+                    <div class="navbar-custom">
+                        <ul class="list-unstyled topbar-right-menu float-right mb-0">
+
+
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                   aria-expanded="false">
+
+                                    <span>
+                                        <span class="account-user-name">Welcome</span>
+                                        <span class="account-position">testuser</span>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                                    <!-- item-->
+                                    <div class=" dropdown-header noti-title">
+                                        <h6 class="text-overflow m-0">Actions !</h6>
+                                    </div>
+
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" th:href="@{/logout}" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-logout mr-1"></i>
+                                        <span>Logout</span>
+                                    </a>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                        <button class="button-menu-mobile open-left disable-btn">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+<!--                        <div class="app-search">-->
+<!--                            <form>-->
+<!--                                <div class="input-group">-->
+<!--                                    <input type="text" class="form-control" placeholder="Search...">-->
+<!--                                    <span class="mdi mdi-magnify"></span>-->
+<!--                                    <div class="input-group-append">-->
+<!--                                        <button class="btn btn-primary" type="submit">Search</button>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </form>-->
+<!--                        </div>-->
+                    </div>
+                    <!-- end Topbar -->
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div layout:fragment="content">
+
+                        </div>
+                        <!-- end page title -->
+
+                        <!-- end row -->
+
+                    </div>
+                    <!-- container -->
+
+                </div>
+                <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                2020 © FBC Holdings
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-right footer-links d-none d-md-block">
+<!--                                    <a href="javascript: void(0);">About</a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+        <div class="rightbar-overlay"></div>
+        <!-- /Right-bar -->
+
+        <!-- bundle -->
+        <script src="js/vendor.min.js" th:src="@{/js/vendor.min.js}"></script>
+        <script src="js/app.min.js" th:src="@{/js/app.min.js}"></script>
+
+        <!-- third party js -->
+        <script src="js/vendor/apexcharts.min.js" th:src="@{/js/vendor/apexcharts.min.js}"></script>
+        <script src="js/vendor/jquery-jvectormap-1.2.2.min.js" th:src="@{/js/vendor/jquery-jvectormap-1.2.2.min.js}"></script>
+        <script src="js/vendor/jquery-jvectormap-world-mill-en.js" th:src="@{/js/vendor/jquery-jvectormap-world-mill-en.js}"></script>
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="js/pages/demo.dashboard.js" th:src="@{/js/pages/demo.dashboard.js}"></script>
+        <!-- end demo js-->
+
+
+    </body>
+</html>
